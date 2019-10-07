@@ -4,8 +4,8 @@ class UI {
         this.price = document.getElementById('price');
     }
 
-    paint(ticker) {
-        this.baseCurrency.textContent = `1 unit of ${ticker.base}`;
-        this.price.textContent = `is worth ${ticker.price} units of ${ticker.target}`;
+    paint(results) {
+        this.baseCurrency.textContent = `1 unit of ${results.base}`;
+        this.price.textContent = `is worth ${results.price} units of ${results.target}`;
     }
 }
